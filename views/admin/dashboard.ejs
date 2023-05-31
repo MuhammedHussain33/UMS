@@ -1,13 +1,18 @@
 <% include ("../layouts/header.ejs") %>
+<center>
 <h1>Dashboard</h1>
-
-<a href="/admin/new-user"><button type="button">▶Add new User</button></a>
+<a href="/admin/new-user"><button type="button">👥Add new User</button></a>
 <br><br>
 
 <form>
-      <input type="text" placeholder="Search User name,email,mobile"name="search" >
+      <input type="text" placeholder="🔎Search User name,email,mobile"name="search" >
       <input type="submit" value="Search">
 </form>
+<style>
+  table, th, td{
+    border:2px solid black;
+  }
+</style>
 
 <table width="50%">
 
@@ -78,6 +83,8 @@ for(let j = 1; j <=totalPages; j++){
 }
 %>
 <br><br>
+
 <a href="/admin/home"><button type="button">🏠 Go To Home</button></a>
+</center>
 
 <% include ('../layouts/footer.ejs') %>

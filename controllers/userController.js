@@ -38,7 +38,7 @@ const insertUser = async(req,res)=>{
 
         const userData = await user.save();
         if(userData){
-            res.render('register',{message:"Your registrtion has been successfully,please verify your mail"});
+            res.redirect("/login");
         }
         else{
             res.render('register',{message:"Your registrtion has been failed."});
