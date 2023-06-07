@@ -135,6 +135,8 @@ margin-right: 4px;
     <div class="shape"></div>
     <div class="shape"></div>
 </div>
+<form action="/login" method="post">
+    <h3>Login Here</h3>
 <%
 if(typeof message !== 'undefined'){
 %>
@@ -143,8 +145,6 @@ if(typeof message !== 'undefined'){
 }
 
 %>
-<form action="/login" method="post">
-    <h3>Login Here</h3>
 
     <label for="username">Username</label>
     <input type="email" name="email" required placeholder="Enter email">
